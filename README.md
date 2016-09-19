@@ -22,6 +22,21 @@ $> clang -Wall -Wextra -Werror -o Colleen Colleen.c; ./Colleen > tmp_Colleen ; d
 $> _
 ```
 
+### Alerte spoiler !
+
+Ne pas lire la suite si vous ne voulez pas voir la solution expliquée.
+
+Nous avons le code suivant :
+```
+#include <stdio.h>
+/* comment one */
+char*s="#include <stdio.h>%c/* comment one */%cchar*s=%c%s%c;%cint main(void){/* comment two */printf(s,10,10,34,s,34,10,10,10);}%cint f(void){return(0);}%c";
+int main(void){/* comment two */printf(s,10,10,34,s,34,10,10,10);}
+int f(void){return(0);}
+```
+
+Ce code est plutôt simple. La variable `*s` stocke le code que la fonction doit répliquer. Décomposons le `printf` : à quoi correspondent les `10` et les `34`. Ce sont les numéros ASCII pour `nl` et `"`.
+
 Ressources :
 - [Quines (self-replicating programs)](http://www.madore.org/~david/computers/quine.html)
 - [The Quine page](https://www.nyx.net/~gthompso/quine.htm)
