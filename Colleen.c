@@ -2,10 +2,11 @@
 /*
 	comment one
 */
-char*s="#include <stdio.h>%c/*%c%ccomment one%c*/%cchar*s=%c%s%c;%cint main(void){%c/*%c%ccomment two%c*/%cprintf(s,10,10,9,10,10,34,s,34,10,10,10,9,10,10,10,10);}%cint f(void){return(0);}%c";
+void f(void){
+char*s="#include <stdio.h>%c/*%c%ccomment one%c*/%cvoid f(void){%cchar*s=%c%s%c;%cprintf(s,10,10,9,10,10,10,34,s,34,10,10,10,10,9,10,10,10);}%cint main(void){%c/*%c%ccomment two%c*/%cf();}%c";
+printf(s,10,10,9,10,10,10,34,s,34,10,10,10,10,9,10,10,10);}
 int main(void){
 /*
 	comment two
 */
-printf(s,10,10,9,10,10,34,s,34,10,10,10,9,10,10,10,10);}
-int f(void){return(0);}
+f();}
