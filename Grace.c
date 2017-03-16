@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define FIRST FIRST
-#define SECOND SECOND
-#define FT() int main(void){FILE *fp=fopen("Grace_kid.c", "w");char *s="#include <stdio.h>%c#define FIRST FIRST%c#define SECOND SECOND%c#define FT() int main(void){FILE *fp=fopen("Grace_kid.c", "w");char *s=%c%s%c;fprintf(fp,s,10,10,10,34,s,34,10);}%cFT(0)";fprintf(fp,s,10,10,10,34,s,34,10);}
-FT()
+#define OPEN FILE *fp=fopen
+#define CLOSE fclose
+#define FT(x) int main(void){OPEN(x, "w");char *s="#include <stdio.h>%c#define OPEN FILE *fp=fopen%c#define CLOSE fclose%c#define FT(x) int main(void){OPEN(x, %cw%c);char *s=%c%s%c;fprintf(fp,s,10,10,10,34,34,34,s,34,10,34,34,10);CLOSE(fp);return 0;}%cFT(%cGrace_kid.c%c)%c";fprintf(fp,s,10,10,10,34,34,34,s,34,10,34,34,10);CLOSE(fp);return 0;}
+FT("Grace_kid.c")
