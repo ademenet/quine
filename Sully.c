@@ -14,3 +14,5 @@ fclose(fp);
 sprintf(cmd, "clang -Wall -Wextra -Werror -o Sully_%d %s; ./Sully_%d", i, file, i);
 system(cmd);
 return 0;}
+
+// TODO: faire en sorte que ./Sully_0 ne soit pas execute : mettre un if sur lexecution
