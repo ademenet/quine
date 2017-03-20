@@ -1,4 +1,16 @@
-.PHONY: all test clean fclean
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/03/20 13:26:01 by ademenet          #+#    #+#              #
+#    Updated: 2017/03/20 13:26:02 by ademenet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+.PHONY: all clean fclean re
 
 CC = clang
 FLAGS = -Wall -Wextra -Werror
