@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-int i = 11;
+int i = 5;
 int main() {
 if(strcmp(__FILE__, "Sully.c")) --i;
 char cmd[512]; char file[512];
